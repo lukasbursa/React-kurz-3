@@ -1,8 +1,11 @@
 import React from 'react'
+import "./Footer.css"
 
 const Footer = () => {
   return (
-    <footer>Patička</footer>
+    <footer>
+      <p>Patička - text</p>
+    </footer>
   )
 }
 

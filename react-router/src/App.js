@@ -6,6 +6,7 @@ import Movies from './pages/Movies'
 import Serials from './pages/Serials'
 import Error404 from './pages/Error404'
 import SharedLayout from "./pages/SharedLayout"
+import OneMovie from './components/OneMovie'
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
         <Route path="/" element={ <SharedLayout /> } >
           <Route index element={ <Home /> } />
           <Route path="/movies" element={ <Movies /> } />
+          <Route path="/movies/:movieId" element={ <OneMovie /> } />
           <Route path="/serials" element={ <Serials /> } />
           <Route path="*" element={ <Error404 /> } />
         </Route>

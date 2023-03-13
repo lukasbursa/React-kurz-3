@@ -6,9 +6,9 @@ const Navbar = () => {
   return (
     <header>
       <nav>
-        <NavLink to="/" className={({isActive}) => isActive ? "activeLink" : "nonActiveLink"}>Domů</NavLink><br />
-        <NavLink to="/movies">Filmy</NavLink><br />
-        <NavLink to="/serials">Seriály</NavLink><br />
+        <NavLink to="/">Domů</NavLink>
+        <NavLink to="/movies" className={({isActive}) => isActive ? "activeLink" : "nonActiveLink"}>Filmy</NavLink>
+        <NavLink to="/serials">Seriály</NavLink>
       </nav>
         
     </header>
