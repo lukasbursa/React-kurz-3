@@ -42,15 +42,14 @@ const App = () => {
       minage: e.target.formAge.value,
       time: e.target.formTime.value,
     };
-    try{
-      await projectFireStore.collection("movies").add(newMovie)
-      e.target.formTitle.value = ""
-      e.target.formAge.value = ""
-      e.target.formTime.value = ""
-    }catch (err){
-      setError(err.message)
+    try {
+      await projectFireStore.collection("movies").add(newMovie);
+      e.target.formTitle.value = "";
+      e.target.formAge.value = "";
+      e.target.formTime.value = "";
+    } catch (err) {
+      setError(err.message);
     }
-    
   };
 
   return (
